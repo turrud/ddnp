@@ -1,3 +1,4 @@
+---
 deployment:
   tasks:
     # Set the deployment path
@@ -9,8 +10,8 @@ deployment:
     # Check if the .env file exists and copy .env.example to .env if it doesn't
      - echo "Checking for .env file and copying if not exists"
      - if [ ! -f "$DEPLOYPATH/.env" ]; then
-        /bin/cp .env.example $DEPLOYPATH/.env
-        fi
+     /bin/cp .env.example $DEPLOYPATH/.env
+     fi
 
     # Change directory to the deployment path
       - cd $DEPLOYPATH
@@ -18,8 +19,8 @@ deployment:
     # Check if the vendor directory exists and install dependencies if it doesn't
       - echo "Checking for vendor directory and installing dependencies if not exists"
       - if [ ! -d "vendor" ]; then
-        /usr/local/bin/composer install --no-dev
-        fi
+      /usr/local/bin/composer install --no-dev
+      fi
 
     # Run Laravel artisan commands
       - php artisan migrate --force
