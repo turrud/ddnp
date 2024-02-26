@@ -7,10 +7,10 @@ deployment:
       - /bin/cp -R * $DEPLOYPATH
 
     # Check if the .env file exists and copy .env.example to .env if it doesn't
-     - echo "Checking for .env file and copying if not exists"
-     - if [ ! -f "$DEPLOYPATH/.env" ]; then
+      - echo "Checking for .env file and copying if not exists"
+      - if [ ! -f "$DEPLOYPATH/.env" ]; then
         /bin/cp .env.example $DEPLOYPATH/.env
-        fi
+      - fi
 
     # Change directory to the deployment path
       - cd $DEPLOYPATH
@@ -19,7 +19,7 @@ deployment:
       - echo "Checking for vendor directory and installing dependencies if not exists"
       - if [ ! -d "vendor" ]; then
         /usr/local/bin/composer install --no-dev
-        fi
+      - fi
 
     # Run Laravel artisan commands
       - php artisan migrate --force
