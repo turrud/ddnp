@@ -1,11 +1,11 @@
 # Set the deployment path
-export DEPLOYPATH=/home/u1575278/public_html/production
+export DEPLOYPATH=/home/u1575278/public_html/turmoc
 
 # Copy all files to the deployment path
 /bin/cp -R * $DEPLOYPATH
 
 # Copy the .htaccess file to the deployment path
-/bin/cp .htaccess $DEPLOYPATH
+# /bin/cp .htaccess $DEPLOYPATH
 
 # Check if the .env file exists and copy .env.example to .env if it doesn't
 echo "Checking for .env file and copying if not exists"
