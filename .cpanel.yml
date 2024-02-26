@@ -1,26 +1,28 @@
-# Set the deployment path
-export DEPLOYPATH=/home/u1575278/public_html/turmoc
+deployment:
+  tasks:
+    # Set the deployment path
+      - export DEPLOYPATH=/home/u1575278/public_html/turmoc
 
-# Copy all files to the deployment path
-/bin/cp -R * $DEPLOYPATH
+    # Copy all files to the deployment path
+      - /bin/cp -R * $DEPLOYPATH
 
-# Check if the .env file exists and copy .env.example to .env if it doesn't
-echo "Checking for .env file and copying if not exists"
-if [ ! -f "$DEPLOYPATH/.env" ]; then
-    /bin/cp .env.example $DEPLOYPATH/.env
-fi
+    # Check if the .env file exists and copy .env.example to .env if it doesn't
+     - echo "Checking for .env file and copying if not exists"
+     - if [ ! -f "$DEPLOYPATH/.env" ]; then
+        /bin/cp .env.example $DEPLOYPATH/.env
+        fi
 
-# Change directory to the deployment path
-cd $DEPLOYPATH
+    # Change directory to the deployment path
+      - cd $DEPLOYPATH
 
-# Check if the vendor directory exists and install dependencies if it doesn't
-echo "Checking for vendor directory and installing dependencies if not exists"
-if [ ! -d "vendor" ]; then
-    /usr/local/bin/composer install --no-dev
-fi
+    # Check if the vendor directory exists and install dependencies if it doesn't
+      - echo "Checking for vendor directory and installing dependencies if not exists"
+      - if [ ! -d "vendor" ]; then
+        /usr/local/bin/composer install --no-dev
+        fi
 
-# Run Laravel artisan commands
-php artisan migrate --force
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
+    # Run Laravel artisan commands
+      - php artisan migrate --force
+      - php artisan config:cache
+      - php artisan route:cache
+      - php artisan view:cache
