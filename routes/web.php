@@ -50,8 +50,8 @@ Route::get('/about/award', [ViewAboutController::class, 'award'])->name('about.a
 Route::get('/projects/interior-design', [ViewProjectController::class, 'interiorDesign'])->name('projects.interior_design');
 Route::get('/projects/architecture-design', [ViewProjectController::class, 'architectureDesign'])->name('projects.architecture_design');
 
-Route::get('/contact', [ViewContactController::class ,'index'])->name('contacts');
-Route::get('/contact/form', [ViewContactController::class ,'index'])->name('contacts');
+Route::get('/contact-us', [ViewContactController::class ,'index'])->name('contact-us');
+// Route::get('/contact/form', [ViewContactController::class ,'index'])->name('contacts');
 
 Route::middleware(['auth:sanctum', 'verified'])
     ->get('/dashboard', function () {

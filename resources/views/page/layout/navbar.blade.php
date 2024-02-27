@@ -13,7 +13,7 @@
         <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
         <a href="/about/profile" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">About</a>
         <a href="/projects/interior-design" class="nav-link {{ request()->is('projects*') ? 'active' : '' }}">Project</a>
-        <a href="/contact" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+        <a href="/contact-us" class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}">Contact Us</a>
       </div>
     </div>
   </div>
