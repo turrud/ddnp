@@ -66,6 +66,7 @@ class TeamTest extends TestCase
 
         $data = [
             'name' => $this->faker->name(),
+            'jabatan' => $this->faker->text(255),
             'text' => $this->faker->text(),
             'imgurl' => $this->faker->text(255),
             'video' => $this->faker->text(255),

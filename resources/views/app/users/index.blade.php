@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            @lang('crud.teams.index_title')
+            @lang('crud.users.index_title')
         </h2>
     </x-slot>
 
@@ -32,9 +32,9 @@
                             </form>
                         </div>
                         <div class="md:w-1/2 text-right">
-                            @can('create', App\Models\Team::class)
+                            @can('create', App\Models\User::class)
                             <a
-                                href="{{ route('teams.create') }}"
+                                href="{{ route('users.create') }}"
                                 class="button button-primary"
                             >
                                 <i class="mr-1 icon ion-md-add"></i>
@@ -50,73 +50,22 @@
                         <thead class="text-gray-700">
                             <tr>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.name')
+                                    @lang('crud.users.inputs.name')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.jabatan')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.text')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.image')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.imgurl')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.file')
-                                </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.teams.inputs.video')
+                                    @lang('crud.users.inputs.email')
                                 </th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody class="text-gray-600">
-                            @forelse($teams as $team)
+                            @forelse($users as $user)
                             <tr class="hover:bg-gray-50">
                                 <td class="px-4 py-3 text-left">
-                                    {{ $team->name ?? '-' }}
+                                    {{ $user->name ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-left">
-                                    {{ $team->jabatan ?? '-' }}
-                                </td>
-                                <td class="px-4 py-3 text-left">
-                                    {{ $team->text ?? '-' }}
-                                </td>
-                                <td class="px-4 py-3 text-left">
-                                    <x-partials.thumbnail
-                                        src="{{ $team->image ? \Storage::url($team->image) : '' }}"
-                                    />
-                                </td>
-                                <td class="px-4 py-3 text-left">
-                                    <x-partials.thumbnail
-                                        src="{{ $team->imgurl }}"
-                                    />
-                                </td>
-                                {{-- <td class="px-4 py-3 text-left">
-                                    <a
-                                        class="underline cursor-pointer"
-                                        target="_blank"
-                                        href="{{ $team->imgurl }}"
-                                        >{{ $team->imgurl ?? '-' }}</a
-                                    >
-                                </td> --}}
-                                <td class="px-4 py-3 text-left">
-                                    @if($team->file)
-                                    <a
-                                        href="{{ \Storage::url($team->file) }}"
-                                        target="blank"
-                                        ><i
-                                            class="mr-1 icon ion-md-download"
-                                        ></i
-                                        >&nbsp;Download</a
-                                    >
-                                    @else - @endif
-                                </td>
-                                <td class="px-4 py-3 text-left">
-                                    {{ $team->video ?? '-' }}
+                                    {{ $user->email ?? '-' }}
                                 </td>
                                 <td
                                     class="px-4 py-3 text-center"
@@ -131,9 +80,9 @@
                                             align-middle
                                         "
                                     >
-                                        @can('update', $team)
+                                        @can('update', $user)
                                         <a
-                                            href="{{ route('teams.edit', $team) }}"
+                                            href="{{ route('users.edit', $user) }}"
                                             class="mr-1"
                                         >
                                             <button
@@ -145,9 +94,9 @@
                                                 ></i>
                                             </button>
                                         </a>
-                                        @endcan @can('view', $team)
+                                        @endcan @can('view', $user)
                                         <a
-                                            href="{{ route('teams.show', $team) }}"
+                                            href="{{ route('users.show', $user) }}"
                                             class="mr-1"
                                         >
                                             <button
@@ -157,9 +106,9 @@
                                                 <i class="icon ion-md-eye"></i>
                                             </button>
                                         </a>
-                                        @endcan @can('delete', $team)
+                                        @endcan @can('delete', $user)
                                         <form
-                                            action="{{ route('teams.destroy', $team) }}"
+                                            action="{{ route('users.destroy', $user) }}"
                                             method="POST"
                                             onsubmit="return confirm('{{ __('crud.common.are_you_sure') }}')"
                                         >
@@ -183,7 +132,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="7">
+                                <td colspan="3">
                                     @lang('crud.common.no_items_found')
                                 </td>
                             </tr>
@@ -191,9 +140,9 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="7">
+                                <td colspan="3">
                                     <div class="mt-10 px-4">
-                                        {!! $teams->render() !!}
+                                        {!! $users->render() !!}
                                     </div>
                                 </td>
                             </tr>

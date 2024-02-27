@@ -13,7 +13,15 @@ class Team extends Model
     use Searchable;
     use SoftDeletes;
 
-    protected $fillable = ['name', 'text', 'imgurl', 'image', 'file', 'video'];
+    protected $fillable = [
+        'name',
+        'jabatan',
+        'text',
+        'imgurl',
+        'image',
+        'file',
+        'video',
+    ];
 
     protected $searchableFields = ['*'];
 }

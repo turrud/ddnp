@@ -135,6 +135,7 @@ return [
         'show_title' => 'Show Team',
         'inputs' => [
             'name' => 'Name',
+            'jabatan' => 'Jabatan',
             'text' => 'Text',
             'image' => 'Image',
             'imgurl' => 'Imgurl',
@@ -210,6 +211,20 @@ return [
             'imgurl' => 'Imgurl',
             'file' => 'File',
             'video' => 'Video',
+        ],
+    ],
+
+    'users' => [
+        'name' => 'Users',
+        'index_title' => 'Users List',
+        'new_title' => 'New User',
+        'create_title' => 'Create User',
+        'edit_title' => 'Edit User',
+        'show_title' => 'Show User',
+        'inputs' => [
+            'name' => 'Name',
+            'email' => 'Email',
+            'password' => 'Password',
         ],
     ],
 

@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\HomeController;
 use App\Http\Controllers\Api\TeamController;
+use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\AboutController;
@@ -66,4 +67,6 @@ Route::name('api.')
         Route::apiResource('clients', ClientController::class);
 
         Route::apiResource('awards', AwardController::class);
+
+        Route::apiResource('users', UserController::class);
     });

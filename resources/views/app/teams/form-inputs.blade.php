@@ -12,7 +12,17 @@
     </x-inputs.group>
 
     <x-inputs.group class="w-full">
-        <x-inputs.textarea name="text" label="Text"
+        <x-inputs.text
+            name="jabatan"
+            label="Jabatan"
+            :value="old('jabatan', ($editing ? $team->jabatan : ''))"
+            maxlength="255"
+            placeholder="Jabatan"
+        ></x-inputs.text>
+    </x-inputs.group>
+
+    <x-inputs.group class="w-full">
+        <x-inputs.textarea name="text" label="Text" maxlength="255"
             >{{ old('text', ($editing ? $team->text : '')) }}</x-inputs.textarea
         >
     </x-inputs.group>

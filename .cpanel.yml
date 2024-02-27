@@ -2,7 +2,7 @@
 deployment:
   tasks:
     # Set the deployment path
-      - export DEPLOYPATH=/home/u1575278/public_html/turmoc
+      - export DEPLOYPATH=/home/u1575278/public_html/turmoc/
 
     # Copy all files to the deployment path
       - /bin/cp -R * $DEPLOYPATH

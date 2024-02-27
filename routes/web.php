@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\AboutController;
+// use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AwardController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\MethodController;
@@ -74,4 +76,5 @@ Route::prefix('/')
         Route::resource('partners', PartnerController::class);
         Route::resource('clients', ClientController::class);
         Route::resource('awards', AwardController::class);
+        Route::resource('users', UserController::class);
     });

@@ -73,6 +73,11 @@
                         Awards
                         </x-dropdown-link>
                         @endcan
+                        @can('view-any', App\Models\User::class)
+                        <x-dropdown-link href="{{ route('users.index') }}">
+                        Users
+                        </x-dropdown-link>
+                        @endcan
                 </x-nav-dropdown>
 
                     @if (Auth::user()->can('view-any', Spatie\Permission\Models\Role::class) || 
@@ -268,6 +273,11 @@
                 @can('view-any', App\Models\Award::class)
                 <x-responsive-nav-link href="{{ route('awards.index') }}">
                 Awards
+                </x-responsive-nav-link>
+                @endcan
+                @can('view-any', App\Models\User::class)
+                <x-responsive-nav-link href="{{ route('users.index') }}">
+                Users
                 </x-responsive-nav-link>
                 @endcan
 

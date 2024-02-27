@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('teams', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name')->nullable();
+            $table->string('jabatan')->nullable();
             $table->text('text')->nullable();
             $table->string('imgurl')->nullable();
             $table->string('image')->nullable();
