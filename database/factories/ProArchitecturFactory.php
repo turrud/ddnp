@@ -27,6 +27,7 @@ class ProArchitecturFactory extends Factory
             'imgurl' => $this->faker->text(255),
             'text' => $this->faker->text(),
             'video' => $this->faker->text(255),
+            'url' => $this->faker->url(),
         ];
     }
 }

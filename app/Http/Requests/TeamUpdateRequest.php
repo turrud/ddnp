@@ -25,6 +25,7 @@ class TeamUpdateRequest extends FormRequest
             'text' => ['nullable', 'max:255', 'string'],
             'image' => ['nullable', 'image', 'max:1024'],
             'imgurl' => ['nullable', 'max:255', 'string'],
+            'url' => ['nullable', 'url'],
             'file' => ['nullable', 'file'],
             'video' => ['nullable', 'max:255', 'string'],
         ];

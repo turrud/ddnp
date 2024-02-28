@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->text('text')->nullable();
             $table->string('imgurl')->nullable();
             $table->string('image')->nullable();
+            $table->string('url')->nullable();
             $table->string('file')->nullable();
             $table->string('video')->nullable();
 

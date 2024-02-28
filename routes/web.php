@@ -4,9 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TeamController;
-use App\Http\Controllers\AboutController;
-// use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AwardController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\MethodController;
@@ -40,7 +39,11 @@ Route::get('/', [ViewHomeController::class ,'index'])->name('home');
 
 // Route::get('/about', [ViewAboutController::class, 'index'])->name('about');
 Route::get('/about/profile', [ViewAboutController::class, 'profile'])->name('about.profil');
+
 Route::get('/about/team', [ViewAboutController::class, 'team'])->name('about.team');
+Route::get('/about/team/{teamId}', [ViewAboutController::class, 'teamshow'])->name('about.team.show');
+
+
 Route::get('/about/design-method', [ViewAboutController::class, 'design_method'])->name('about.design_method');
 Route::get('/about/partner', [ViewAboutController::class, 'partner'])->name('about.partner');
 Route::get('/about/client', [ViewAboutController::class, 'client'])->name('about.client');
@@ -50,8 +53,19 @@ Route::get('/about/award', [ViewAboutController::class, 'award'])->name('about.a
 Route::get('/projects/interior-design', [ViewProjectController::class, 'interiorDesign'])->name('projects.interior_design');
 Route::get('/projects/architecture-design', [ViewProjectController::class, 'architectureDesign'])->name('projects.architecture_design');
 
-Route::get('/contact-us', [ViewContactController::class ,'index'])->name('contact-us');
-// Route::get('/contact/form', [ViewContactController::class ,'index'])->name('contacts');
+Route::get('/projects/interior-design/{interiorId}', [ViewProjectController::class, 'interiorDesignShow'])->name('projects.interior_design.show');
+Route::get('/projects/architecture-design/{archiId}', [ViewProjectController::class, 'architectureDesignShow'])->name('projects.architecture_design.show');
+
+Route::get('/forms/create', [ViewContactController::class, 'create'])->name('forms.create');
+Route::post('/forms/store', [ViewContactController::class, 'store'])->name('forms.store');
+// Route::get('/contact/create', [ContactController::class, 'create'])->name('contacts.create');
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::resource('forms', ViewContactController::class) ->except(['create', 'store']);
+
+});
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])
     ->get('/dashboard', function () {

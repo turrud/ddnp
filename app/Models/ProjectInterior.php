@@ -13,7 +13,15 @@ class ProjectInterior extends Model
     use Searchable;
     use SoftDeletes;
 
-    protected $fillable = ['name', 'text', 'image', 'imgurl', 'file', 'video'];
+    protected $fillable = [
+        'name',
+        'text',
+        'image',
+        'imgurl',
+        'file',
+        'video',
+        'url',
+    ];
 
     protected $searchableFields = ['*'];
 

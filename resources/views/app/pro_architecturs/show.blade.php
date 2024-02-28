@@ -53,6 +53,12 @@
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
+                            @lang('crud.pro_architecturs.inputs.url')
+                        </h5>
+                        <span>{{ $proArchitectur->url ?? '-' }}</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="font-medium text-gray-700">
                             @lang('crud.pro_architecturs.inputs.file')
                         </h5>
                         @if($proArchitectur->file)

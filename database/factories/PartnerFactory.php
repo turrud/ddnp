@@ -26,6 +26,7 @@ class PartnerFactory extends Factory
             'name' => $this->faker->name(),
             'text' => $this->faker->text(),
             'imgurl' => $this->faker->text(255),
+            'url' => $this->faker->url(),
             'video' => $this->faker->text(255),
         ];
     }

@@ -21,6 +21,7 @@ class Team extends Model
         'image',
         'file',
         'video',
+        'url',
     ];
 
     protected $searchableFields = ['*'];

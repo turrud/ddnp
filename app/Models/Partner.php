@@ -13,7 +13,15 @@ class Partner extends Model
     use Searchable;
     use SoftDeletes;
 
-    protected $fillable = ['name', 'text', 'imgurl', 'image', 'file', 'video'];
+    protected $fillable = [
+        'name',
+        'text',
+        'imgurl',
+        'image',
+        'url',
+        'file',
+        'video',
+    ];
 
     protected $searchableFields = ['*'];
 }

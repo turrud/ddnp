@@ -12,6 +12,11 @@ use App\Http\Requests\ContactUpdateRequest;
 
 class ContactController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth:sanctum', 'verified'])->except(['create']);
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -44,7 +49,7 @@ class ContactController extends Controller
      */
     public function store(ContactStoreRequest $request): RedirectResponse
     {
-        // $this->authorize('create', Contact::class);
+        $this->authorize('create', Contact::class);
 
         $validated = $request->validated();
         if ($request->hasFile('image')) {

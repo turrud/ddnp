@@ -1,6 +1,6 @@
 @extends('page.layout.main')
 
-@section('title', 'Team')
+@section('title', 'Detail Team')
 
 @section('content')
 <hr class="container">
@@ -12,22 +12,32 @@
                 <h1 class="display-5 mb-4 ">Turning Dreams into Homes Your Vision, Our Expertise</h1>
             </div>
             <div class="row g-0 team-items justify-content-center">
-                @foreach ($teams as $team)
                 <div class="col-md-2 wow fadeInUp mx-1 mb-1" data-wow-delay="0.1s">
-                    <a href="{{ route('about.team.show', ['teamId' => $team->id]) }}" class="team-item-link" target="_blank">
-                        <div class="team-item position-relative">
+
+                        <div class="team-item">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ $team->imgurl }}" alt="image-team">
+                                <img class="img-fluid" src="{{ $teamMember->imgurl }}" alt="image-team">
                             </div>
                             <div class="bg-light text-center p-4">
-                                <h3 class="fo">{{ $team->name }}</h3>
+                                <h3 class="fo">{{ $teamMember->name }}</h3>
                                 <hr>
-                                <span class="j">{{ $team->jabatan }}</span>
+                                <span class="j">{{ $teamMember->jabatan }}</span>
                             </div>
                         </div>
-                    </a>
                 </div>
-                @endforeach
+                <div class="col-md-5 wow fadeInUp mx-1 mb-1 m-5" data-wow-delay="0.1s">
+                    <div class="">
+                        <div class="card-body" style="text-align: justify; ">
+
+                            <div style="text-align: justify; ">
+                                <blockquote class="blockquote text-center">
+                                <footer class="blockquote-footer">{{ $teamMember->text }}</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 

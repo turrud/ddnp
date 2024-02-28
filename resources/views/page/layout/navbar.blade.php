@@ -13,7 +13,7 @@
         <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
         <a href="/about/profile" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">About</a>
         <a href="/projects/interior-design" class="nav-link {{ request()->is('projects*') ? 'active' : '' }}">Project</a>
-        <a href="/contact-us" class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}">Contact Us</a>
+        <a href="/forms/create" class="nav-link {{ request()->is('forms*') ? 'active' : '' }}">Contact Us</a>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
                     <a href="/about/profile" class="{{ request()->is('about/profile') ? 'active' : '' }}">Profile</a>
                 </li>
                 <li class="list-group-item nav-item">
-                    <a href="/about/team" class="{{ request()->is('about/team') ? 'active' : '' }}">Team</a>
+                    <a href="/about/team" class="{{ request()->is('about/team*') ? 'active' : '' }}">Team</a>
                 </li>
                 <li class="list-group-item nav-item">
                     <a href="/about/design-method" class="{{ request()->is('about/design-method') ? 'active' : '' }}">Design Method</a>
@@ -59,10 +59,10 @@
 <div class="container submenu projects mt-5">
     <div class="row justify-content-center">
         <div class="col d-flex justify-content-center">
-            <a href="/projects/interior-design" class="{{ request()->is('projects/interior-design') ? 'active' : '' }}">Interior Design</a>
+            <a href="/projects/interior-design" class="{{ request()->is('projects/interior-design*') ? 'active' : '' }}">Interior Design</a>
         </div>
         <div class="col d-flex justify-content-center">
-            <a href="/projects/architecture-design" class="{{ request()->is('projects/architecture-design') ? 'active' : '' }}">Architecture Design</a>
+            <a href="/projects/architecture-design" class="{{ request()->is('projects/architecture-design*') ? 'active' : '' }}">Architecture Design</a>
         </div>
     </div>
 </div>

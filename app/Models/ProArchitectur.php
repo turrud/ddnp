@@ -13,7 +13,15 @@ class ProArchitectur extends Model
     use Searchable;
     use SoftDeletes;
 
-    protected $fillable = ['name', 'image', 'imgurl', 'text', 'file', 'video'];
+    protected $fillable = [
+        'name',
+        'image',
+        'imgurl',
+        'text',
+        'file',
+        'video',
+        'url',
+    ];
 
     protected $searchableFields = ['*'];
 

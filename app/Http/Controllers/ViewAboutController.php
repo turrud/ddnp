@@ -22,6 +22,10 @@ class ViewAboutController extends Controller
         $teams = Team::all();
         return view('page.about.team.index', compact("teams"));
     }
+    public function teamShow($teamId){
+        $teamMember = Team::findOrFail($teamId);
+        return view('page.about.team.show', compact("teamMember"));
+    }
     public function design_method(){
         return view('page.about.method.index');
     }

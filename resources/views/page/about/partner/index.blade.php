@@ -5,13 +5,25 @@
 @section('content')
 <hr class="container">
 <div class="container">
-    <div class="d-flex flex-wrap justify-content-center">
+    {{-- <div class="d-flex flex-wrap justify-content-center">
         @foreach ($partners as $partner)
             <div class="logo text-center m-2">
                 <img src="{{ $partner->imgurl }}" alt="logo" class="img-fluid">
             </div>
         @endforeach
+    </div> --}}
+
+    <div class="d-flex flex-wrap justify-content-center">
+    @foreach ($partners as $partner)
+            <div class="logo text-center m-2">
+                <!-- Pastikan $partner->url mengandung URL yang valid -->
+                <a href="{{ $partner->url }}" target="_blank">
+                    <img src="{{ $partner->imgurl }}" alt="logo" class="img-fluid">
+                </a>
+            </div>
+        @endforeach
     </div>
+
 </div>
 
 

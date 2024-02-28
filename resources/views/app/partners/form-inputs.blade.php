@@ -12,7 +12,7 @@
     </x-inputs.group>
 
     <x-inputs.group class="w-full">
-        <x-inputs.textarea name="text" label="Text"
+        <x-inputs.textarea name="text" label="Text" maxlength="255"
             >{{ old('text', ($editing ? $partner->text : ''))
             }}</x-inputs.textarea
         >
@@ -66,6 +66,16 @@
             :value="old('imgurl', ($editing ? $partner->imgurl : ''))"
             maxlength="255"
             placeholder="Imgurl"
+        ></x-inputs.url>
+    </x-inputs.group>
+
+    <x-inputs.group class="w-full">
+        <x-inputs.url
+            name="url"
+            label="Url"
+            :value="old('url', ($editing ? $partner->url : ''))"
+            maxlength="255"
+            placeholder="Url"
         ></x-inputs.url>
     </x-inputs.group>
 

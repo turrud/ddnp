@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->text('text')->nullable();
             $table->string('file')->nullable();
             $table->string('video')->nullable();
+            $table->string('url')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

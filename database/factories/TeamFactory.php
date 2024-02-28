@@ -28,6 +28,7 @@ class TeamFactory extends Factory
             'text' => $this->faker->text(),
             'imgurl' => $this->faker->text(255),
             'video' => $this->faker->text(255),
+            'url' => $this->faker->url(),
         ];
     }
 }

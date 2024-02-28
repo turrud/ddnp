@@ -53,6 +53,12 @@
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
+                            @lang('crud.teams.inputs.url')
+                        </h5>
+                        <span>{{ $team->url ?? '-' }}</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="font-medium text-gray-700">
                             @lang('crud.teams.inputs.file')
                         </h5>
                         @if($team->file)

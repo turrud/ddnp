@@ -55,6 +55,12 @@
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
+                            @lang('crud.project_interiors.inputs.url')
+                        </h5>
+                        <span>{{ $projectInterior->url ?? '-' }}</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="font-medium text-gray-700">
                             @lang('crud.project_interiors.inputs.file')
                         </h5>
                         @if($projectInterior->file)
