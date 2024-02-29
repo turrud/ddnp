@@ -15,6 +15,7 @@
 
                 <div class="col text-center wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4">Dive into a world of design creativity and expertise with us. Reach out today to start the conversation."</p>
+                    <hr>
                     <form action="{{ route('forms.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row g-3">
@@ -80,14 +81,18 @@
                                     </div>
 
                                 </div>
-                                <div class="col-md-5">
-                                    <button class="btn btn-success btn-sm " type="submit">Send Message</button>
+                                <div class="col-md-5 berubah line">
+                                    <button class="btn btn-sm" type="submit">
+                                        <i class="bi bi-send-x-fill"> Send</i>
+                                    </button>
                                 </div>
+
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+            <hr>
         </div>
     </div>
 <!-- Contact End -->

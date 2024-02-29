@@ -12,11 +12,13 @@ class ViewProjectController extends Controller
         return view('page.project.index');
     }
     public function interiorDesign(){
-        $projectInteriors = ProjectInterior::latest()->take(6)->get();
+        // $projectInteriors = ProjectInterior::latest()->take(6)->get();
+        $projectInteriors = ProjectInterior::all();
         return view('page.project.interior.index', compact("projectInteriors"));
     }
     public function architectureDesign(){
-        $proArchitecturs = ProArchitectur::latest()->limit(6)->get();
+        // $proArchitecturs = ProArchitectur::latest()->limit(6)->get();
+        $proArchitecturs = ProArchitectur::all();
         return view('page.project.architecture.index', compact("proArchitecturs"));
     }
     public function interiorDesignShow($interiorId){

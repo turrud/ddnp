@@ -14,7 +14,7 @@
             <div class="row g-0 team-items justify-content-center">
                 @foreach ($teams as $team)
                 <div class="col-md-2 wow fadeInUp mx-1 mb-1" data-wow-delay="0.1s">
-                    <a href="{{ route('about.team.show', ['teamId' => $team->id]) }}" class="team-item-link" target="_blank">
+                    <a href="{{ route('about.team.show', ['teamId' => $team->id]) }}" class="team-item-link">
                         <div class="team-item position-relative">
                             <div class="position-relative">
                                 <img class="img-fluid" src="{{ $team->imgurl }}" alt="image-team">
@@ -34,4 +34,16 @@
         </div>
     </div>
 <!-- Team End -->
+<style>
+    .position-relative .img-fluid {
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+    cursor: pointer; /* Changes the cursor to indicate the image can be interacted with */
+    }
+
+    .position-relative:hover .img-fluid {
+        transform: scale(1.05); /* Scales up the image by 5% on hover */
+    }
+
+</style>
+
 @endsection

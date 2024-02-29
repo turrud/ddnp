@@ -33,16 +33,16 @@
             </table>
             <div class="d-flex justify-content-between">
                 <div>
-                    <a href="{{ route('forms.show', $form->id) }}" class="btn btn-info btn-sm">
+                    <a href="{{ route('forms.show', $form->id) }}" class="btn berubah btn-sm">
                         <i class="bi bi-eye-fill"></i>
                     </a>
-                    <a href="{{ route('forms.edit', $form->id) }}" class="btn btn-warning btn-sm">
+                    <a href="{{ route('forms.edit', $form->id) }}" class="btn berubah btn-sm">
                         <i class="bi bi-pencil-fill"></i>
                     </a>
                     <form action="{{ route('forms.destroy', $form->id) }}" method="POST" style="display:inline;">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-sm">
+                        <button type="submit" class="btn berubah btn-sm">
                             <i class="bi bi-trash-fill"></i>
                         </button>
                     </form>
@@ -50,7 +50,7 @@
 
                 <div>
                     <!-- Tombol Back -->
-                    <a href="{{ route('forms.index') }}" class="btn btn-secondary btn-sm">
+                    <a href="{{ route('forms.index') }}" class="btn berubah btn-sm">
                         <i class="bi bi-backspace-fill"></i>
                     </a>
 

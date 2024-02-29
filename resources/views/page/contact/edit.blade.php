@@ -73,16 +73,18 @@
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-md-6 text-left mt-5">
-                        <!-- Tombol Update Message -->
-                        <button class="btn btn-success btn-sm" type="submit">Update Message</button>
-                    </div>
-                    <div class="col-md-6 text-right mt-5">
-                        <!-- Tombol Back -->
-                        <a href="{{ route('forms.index')}}" class="btn btn-secondary btn-sm">Back</a>
+                <div class=" row mt-5 justify-content-center">
+                    <div class="col-md-8 d-flex justify-content-md-between">
+                        <!-- Tombol Update Message di sebelah kiri -->
+                        <button class="btn berubah btn-sm" type="submit"><i class="bi bi-send-check-fill"></i></button>
+
+                        <!-- Tombol Back di sebelah kanan -->
+                        <a href="{{ route('forms.index') }}" class="btn berubah btn-sm">
+                            <i class="bi bi-box-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
+
 
             </div>
         </div>

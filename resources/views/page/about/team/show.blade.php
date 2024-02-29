@@ -26,16 +26,18 @@
                         </div>
                 </div>
                 <div class="col-md-5 wow fadeInUp mx-1 mb-1 m-5" data-wow-delay="0.1s">
-                    <div class="">
-                        <div class="card-body" style="text-align: justify; ">
-
-                            <div style="text-align: justify; ">
-                                <blockquote class="blockquote text-center">
-                                <footer class="blockquote-footer">{{ $teamMember->text }}</footer>
-                                </blockquote>
-                            </div>
-                        </div>
+                    <div class="card-body" style="text-align: justify;">
+                        <blockquote class="blockquote text-center">
+                            <footer class="blockquote-footer">{{ $teamMember->text }}</footer>
+                        </blockquote>
                     </div>
+                    <!-- Menggunakan flexbox untuk memposisikan tombol ke kanan -->
+                    <div class="d-flex justify-content-end">
+                        <a href="{{ route('about.team') }}" class="btn btn-sm berubah">
+                            <i class="bi bi-box-arrow-left"></i>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>

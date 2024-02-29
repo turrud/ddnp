@@ -10,7 +10,7 @@
             <hr>
             <div class="mb-5 berubah line">
 
-                <a href="{{ route('forms.create') }}" class="btn btn-primary btn-sm">
+                <a href="{{ route('forms.create') }}" class="btn berubah btn-sm">
                     <i class="bi bi-file-earmark-plus-fill"></i>
                 </a>
 
@@ -35,16 +35,16 @@
                         <td>{{ $form->date }}</td>
                         <td>{{ $form->created_at->diffForHumans() }}</td>
                         <td>
-                            <a href="{{ route('forms.show', $form->id) }}" class="btn btn-info btn-sm">
+                            <a href="{{ route('forms.show', $form->id) }}" class="btn  btn-sm berubah">
                                 <i class="bi bi-eye-fill"></i>
                             </a>
-                            <a href="{{ route('forms.edit', $form->id) }}" class="btn btn-warning btn-sm">
+                            <a href="{{ route('forms.edit', $form->id) }}" class="btn  btn-sm berubah">
                                 <i class="bi bi-pencil-fill"></i>
                             </a>
                             <form action="{{ route('forms.destroy', $form->id) }}" method="POST" style="display:inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm">
+                                <button type="submit" class="btn btn-sm berubah">
                                     <i class="bi bi-trash-fill"></i>
                                 </button>
                             </form>
