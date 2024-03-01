@@ -115,7 +115,7 @@
         <div class="row justify-content-center">
             <div class="col-md-9 j">
                 <p style="text-align: justify">
-                    "Nusantara," the philosophical foundation of the company's name, is derived from ancient Javanese, referring to the archipelagic region of Indonesia. Literally translating to "islands in between," this term encompasses Indonesia's vast expanse of thousands of large and small islands, including major ones like Java, Sumatra, Kalimantan, Sulawesi, and Papua, along with the surrounding smaller islands. "Nusantara" embodies Indonesia's identity as an island nation, uniting diverse cultures and ethnicities within its rich tapestry. Consequently, the designs produced aim to instill national pride by showcasing the distinctive traits of Nusantara Architecture.
+                    "Nusantara," originating from ancient Javanese language, refers to the archipelagic region of Indonesia. It means "islands in between," encompassing thousands of large and small islands, reflecting Indonesia's identity as an archipelagic nation that unites diverse cultures. Our design aims to evoke national pride by highlighting the distinctive features of Nusantara Architecture. This philosophy serves as the foundation of our creativity, infusing each project with the cultural richness and identity of the beautiful islands in between.
                 </p>
             </div>
             <hr class="mx-auto col-md-9">
@@ -130,7 +130,7 @@
         <div class="row justify-content-center">
             <div class="col-md-9 j">
                 <p style="text-align: justify">
-                    "Dananjaya" is a name derived from the grandmother of one of the company's founders, originating from Sanskrit, and meaning "invincible" or "possessor of bestowed power." Operating in the field of design, the company adopts the term "Nusantara" to signify its geographical origin. Under the name "Dananjaya Design Nusantara," the company aspires to be an invincible design entity, aiming to bring honor and distinction to Indonesia on the global stage.
+                    "Dananjaya" is a name taken from the given name of one of the founders' grandmother, originating from the Sanskrit language, and means "invincible" or "owner of bestowed power". Operating in the design field, the company adopts the term "Nusantara" to signify its geographical origin. With the name “Dananjaya Design Nusantara,” the company aspires to become an unbeatable design entity, aiming to bring honor and distinction to Indonesia on the global stage.
                 </p>
             </div>
             <hr class="mx-auto col-md-9">
@@ -144,13 +144,27 @@
         <hr class="mx-auto col-md-9">
         <div class="row justify-content-center">
             <div class="col-md-9">
-                <div class="text-center mb-3">
-                    <img style="width: 100px;height: 100px;" src="{{ asset('images/icon-logo/logo.png') }}" alt="logo">
-                    <img style="width: 100px;height: 100px;" src="{{ asset('images/icon-logo/logo-1.png') }}" alt="logo">
-                    <img style="width: 100px;height: 100px;" src="{{ asset('images/icon-logo/logo.png') }}" alt="logo">
+                <div class="text-center mb-3 mt-3">
+                    <img style="width: 100px;height: 100px;" src="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" alt="logo">
                 </div>
+                <h4 class="d-flex justify-content-center align-items-center mt-3 text-center text-dark ">
+                    “The Future of Nusantara”
+                </h4>
+
                 <p class="j" style="text-align: justify">
-                    The logo features three key elements representing the company's collaborative spirit. Lines converging towards the center symbolize the four founders from diverse fields coming together. The equality symbol underscores each team member's role, while imperfect angles reflect mutual complementarity. The logo encapsulates a spirit of collaboration, equality, and professionalism in crafting optimal living spaces.
+                    Image of 2 People: Two human figures with strong and confident postures, standing side by side. They create an impression of close partnership and cooperation, reflecting determination in navigating the business world.
+                </p>
+                <p class="j" style="text-align: justify">
+                    Ibex Goat (Mountain Goat): The Ibex Goat becomes the central element in the logo as a representation of Capricorn, with touches of black, white, and gold colors. This Ibex Goat is designed with upright horns, symbolizing resilience in work and an indomitable spirit. The overall design portrays luxury and sustainability, in line with the company's philosophy.
+                </p>
+                <p class="j" style="text-align: justify">
+                    Times New Roman Font: The company name, "PT. Dananjaya Design Nusantara," is displayed below the image in the Times New Roman font style. This font style conveys a classic and professional impression, reflecting the solidity and stability of the company.
+                </p>
+                <p class="j" style="text-align: justify">
+                    Gold Color on Font: A gold-colored font is used to highlight the company name, adding a touch of luxury and excellence to the company's identity. This gold color also creates an elegant and prestigious impression.
+                </p>
+                <p class="j" style="text-align: justify">
+                    This logo creates a strong and elegant image, reflecting the dynamism of business, resilience in work, and an indomitable spirit that are the core values of PT. Dananjaya Design Nusantara in facing challenges in the business world.
                 </p>
             </div>
             <hr class="mx-auto col-md-9">

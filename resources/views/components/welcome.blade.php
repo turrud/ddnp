@@ -1,6 +1,6 @@
 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
     <div class="flex justify-center items-center space-x-4">
-        <x-application-logo-ddn class="block h-12 w-auto" />
+        <x-application-logo class="block h-12 w-auto" />
     </div>
 
 
@@ -26,11 +26,6 @@
         This logo creates a strong and elegant image, reflecting the dynamism of business, resilience in work, and an indomitable spirit that are the core values of PT. Dananjaya Design Nusantara in facing challenges in the business world.
     </p>
 
-</div>
-<div class="flex justify-center items-center space-x-4">
-    <x-application-logos class="block h-12 w-auto" />
-    <x-application-logo class="block h-12 w-auto" />
-    <x-application-logos class="block h-12 w-auto" />
 </div>
 
 

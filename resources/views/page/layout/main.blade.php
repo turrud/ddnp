@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ asset('images/icon-logo/icon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" type="image/x-icon">
     <title>Dananjaya Design | @yield('title')</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -25,8 +25,8 @@
   <body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-black-50" style="width: 6rem; height: 6rem;" role="status"></div>
-        <img style="width: 6rem; height: 6rem;" class="position-absolute top-50 start-50 translate-middle" src="{{ asset('images/icon-logo/loader.jpeg') }}" alt="Icon">
+        <div class="spinner-border position-relative text-black-50" style="width: 7rem; height: 7rem;" role="status"></div>
+        <img style="width: 7rem; height: 7rem;" class="position-absolute top-50 start-50 translate-middle" src="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" alt="Icon">
     </div>
     <!-- Spinner End -->
     @include('page.layout.navbar')

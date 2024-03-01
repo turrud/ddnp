@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img class="img-fluid" loading="lazy" src="{{ asset('images/icon-logo/logo.png') }}" alt="logo-danajaya-design" width="80" height="80">
+      <img class="img-fluid" loading="lazy" src="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" alt="logo-danajaya-design" width="80" height="80">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
