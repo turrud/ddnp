@@ -92,3 +92,10 @@ Route::prefix('/')
         Route::resource('awards', AwardController::class);
         Route::resource('users', UserController::class);
     });
+
+
+
+// Route fallback
+Route::fallback(function() {
+    return response()->view('404', [], 404);
+});
