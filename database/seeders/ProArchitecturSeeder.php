@@ -67,10 +67,10 @@ class ProArchitecturSeeder extends Seeder
 
         ];
 
-        // foreach ($images as $index => $imgurl) {
-        //     ProArchitectur::create([
-        //         'imgurl' => $images[$index % count($images)]
-        //     ]);
-        // }
+        foreach ($images as $index => $imgurl) {
+            ProArchitectur::create([
+                'imgurl' => $images[$index % count($images)]
+            ]);
+        }
     }
 }

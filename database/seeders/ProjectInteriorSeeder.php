@@ -59,10 +59,10 @@ class ProjectInteriorSeeder extends Seeder
             "https://res.cloudinary.com/djzee3t99/image/upload/v1708600418/ddn/img/interior-design/interior-40.png"
         ];
 
-        // foreach ($images as $index => $imgurl) {
-        //     ProjectInterior::create([
-        //         'imgurl' => $images[$index % count($images)]
-        //     ]);
-        // }
+        foreach ($images as $index => $imgurl) {
+            ProjectInterior::create([
+                'imgurl' => $images[$index % count($images)]
+            ]);
+        }
     }
 }

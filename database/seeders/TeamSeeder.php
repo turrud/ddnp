@@ -21,128 +21,134 @@ class TeamSeeder extends Seeder
                 'name' => 'Ahmad Ghazy',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609796/ddn/img/teams/um9nvrts0fmhhlzdp65n.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Fatur Rahman',
                 'jabatan' => '🌏',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609810/ddn/img/teams/htzzbogucskhuam2aeyk.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Inggi Lestari',
                 'jabatan' => 'Commissioner',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609801/ddn/img/teams/bt8xitwiz74k4j9daub3.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Shafira Nur Qalbi',
                 'jabatan' => 'Building Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609790/ddn/img/teams/xrz0efnayossbtuixwp4.png',
-                'text' => 'bla bla'
+                'text' => '...'
+            ],
+            [
+                'name' => 'Syarla Audiena',
+                'jabatan' => 'Marketing Specialist',
+                'imgurl' => 'https://res.cloudinary.com/djzee3t99/image/upload/v1710082639/ddn/img/team/syarla_pfl8ab.jpg',
+                'text' => '...'
             ],
             [
                 'name' => 'Sadida Abdul Ghani',
                 'jabatan' => 'Director of Operations',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609800/ddn/img/teams/rgheul5jpzbdn25c1xk3.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Moch Rifqi Zain',
                 'jabatan' => 'U.O Surakarta',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609792/ddn/img/teams/dlfhkpuyppyhoxuzdldc.png',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Rifan',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609799/ddn/img/teams/nasb1numjomcov11k7mh.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Dinda',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609794/ddn/img/teams/gy4o3o6hjtpldjeh4cku.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Zalfa S',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609791/ddn/img/teams/gc6ppiu4y7x0ald3due3.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Tazqi Amalia',
                 'jabatan' => 'Building Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609787/ddn/img/teams/hiazsx4o14e1plhruoqs.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Hauna Aghnia',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609786/ddn/img/teams/d4jzkticjch03xxtpmry.png',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Imam Cowboy',
                 'jabatan' => 'Furniture Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609783/ddn/img/teams/rwlgl9que5i0iszahn63.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Dandi P',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609779/ddn/img/teams/psbxgasmyw4y0hcr6lzm.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Cindy Pitra Laura',
                 'jabatan' => 'Building Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609774/ddn/img/teams/ppelgcq8hf3ky52oe2se.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Fikri Ajani',
                 'jabatan' => 'Furniture Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609777/ddn/img/teams/qp7uk1uyy8lfnlb3nira.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Faradilah zalzabilah A.S',
                 'jabatan' => 'Interior Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609777/ddn/img/teams/xq8osp5or8pljupscmny.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
 
             [
                 'name' => 'Fadillah Nur Asyifa',
                 'jabatan' => 'Building Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609780/ddn/img/teams/hfjxjwvxe5sg7p5gpvt0.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Raden Mas Atthaya Abi Manyu',
                 'jabatan' => 'F&B CEO',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1695663707/ddn/img/teams/hnf5ivy4mw7y2jfvql1e.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Gilang Dwi Permana',
                 'jabatan' => 'Barista',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1695663706/ddn/img/teams/svqequbpsr0jqryont3j.jpg',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Dzukhan Anggi P, S.T',
                 'jabatan' => 'CEO',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1695663709/ddn/img/teams/pserpuawracvmam4kgxz.png',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
             [
                 'name' => 'Rico M, S.Ds',
                 'jabatan' => 'Furniture Designer',
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609783/ddn/img/teams/hgrgqv2bye6xqggaty0x.png',
-                'text' => 'bla bla'
+                'text' => '...'
             ],
         ];
 
@@ -170,8 +176,8 @@ class TeamSeeder extends Seeder
 
         // ];
 
-        // foreach ($members as $team) {
-        //     Team::create($team);
-        // }
+        foreach ($members as $team) {
+            Team::create($team);
+        }
     }
 }

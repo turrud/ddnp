@@ -42,12 +42,12 @@ class HomeSeeder extends Seeder
             "https://res.cloudinary.com/djzee3t99/image/upload/v1707094729/ddn/img/slide/slide-5.png"
         ];
 
-        // foreach ($texts as $index => $text) {
-        //     Home::create([
-        //         'name' => 'Nusantara',
-        //         'text' => $text,
-        //         'imgurl' => $images[$index % count($images)],
-        //     ]);
-        // }
+        foreach ($texts as $index => $text) {
+            Home::create([
+                'name' => 'Nusantara',
+                'text' => $text,
+                'imgurl' => $images[$index % count($images)],
+            ]);
+        }
     }
 }

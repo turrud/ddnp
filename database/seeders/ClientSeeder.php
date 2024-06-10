@@ -83,10 +83,10 @@ class ClientSeeder extends Seeder
             "Yummy Kost Cirebon",
         ];
 
-        // foreach ($names as $name) {
-        //     Client::create([
-        //        'name' => $name,
-        //     ]);
-        // }
+        foreach ($names as $name) {
+            Client::create([
+               'name' => $name,
+            ]);
+        }
     }
 }
