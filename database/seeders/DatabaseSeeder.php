@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'admin@dananjayadesign.com',
                 'password' => \Hash::make('aduhGimana'),
             ]);
-        // $this->call(PermissionsSeeder::class);
+        $this->call(PermissionsSeeder::class);
 
         // $this->call(AboutSeeder::class);
         // $this->call(AwardSeeder::class);
