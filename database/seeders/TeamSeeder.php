@@ -144,7 +144,7 @@ class TeamSeeder extends Seeder
                 'imgurl' => 'https://res.cloudinary.com/dcaurcxth/image/upload/v1694609783/ddn/img/teams/hgrgqv2bye6xqggaty0x.png',
                 'text' => 'bla bla'
             ],
-            ];
+        ];
 
         // $images = [
         //     "https://res.cloudinary.com/djzee3t99/image/upload/v1708606456/ddn/img/team/id-ghazy.png",
@@ -170,8 +170,8 @@ class TeamSeeder extends Seeder
 
         // ];
 
-        foreach ($members as $team) {
-            Team::create($team);
-        }
+        // foreach ($members as $team) {
+        //     Team::create($team);
+        // }
     }
 }

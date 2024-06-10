@@ -204,9 +204,9 @@ class PartnerSeeder extends Seeder
             ]
         ];
 
-        foreach ($logos as $partner) {
-            Partner::create($partner);
-        }
+        // foreach ($logos as $partner) {
+        //     Partner::create($partner);
+        // }
 
     }
 }

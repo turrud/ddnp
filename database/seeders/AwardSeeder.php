@@ -59,9 +59,9 @@ class AwardSeeder extends Seeder
             ],
         ];
 
-        foreach ($awards as $award) {
-            Award::create($award);
-        }
+        // foreach ($awards as $award) {
+        //     Award::create($award);
+        // }
 
     }
 }
