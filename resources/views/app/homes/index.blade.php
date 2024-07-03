@@ -55,13 +55,13 @@
                                 <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.text')
                                 </th>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.homes.inputs.image')
-                                </th>
                                 {{-- <th class="px-4 py-3 text-left">
+                                    @lang('crud.homes.inputs.image')
+                                </th> --}}
+                                <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.imgurl')
                                 </th>
-                                <th class="px-4 py-3 text-left">
+                                {{-- <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.file')
                                 </th>
                                 <th class="px-4 py-3 text-left">
@@ -79,24 +79,24 @@
                                 <td class="px-4 py-3 text-left">
                                     {{ $home->text ?? '-' }}
                                 </td>
-                                <td class="px-4 py-3 text-left">
+                                {{-- <td class="px-4 py-3 text-left">
                                     <x-partials.thumbnail
                                         src="{{ $home->image ? \Storage::url($home->image) : '' }}"
                                     />
-                                </td>
-                                {{-- <td class="px-4 py-3 text-left">
+                                </td> --}}
+                                <td class="px-4 py-3 text-left">
                                     <x-partials.thumbnail
                                         src="{{ $home->imgurl}}"
                                     />
-                                </td> --}}
-                                {{-- <td class="px-4 py-3 text-left">
+                                </td>
+                                <td class="px-4 py-3 text-left">
                                     <a
                                         class="underline cursor-pointer"
                                         target="_blank"
                                         href="{{ $home->imgurl }}"
                                         >{{ $home->imgurl ?? '-' }}</a
                                     >
-                                </td> --}}
+                                </td>
                                 {{-- <td class="px-4 py-3 text-left">
                                     @if($home->file)
                                     <a

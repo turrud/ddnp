@@ -8,7 +8,7 @@
         <div class="carousel-inner">
             @foreach ($homes as $key => $home)
             <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
-                <img src="{{ $home->image ? \Storage::url($home->image) : '' }}" class="d-block w-100" alt="Home Image">
+                <img src="{{ asset($home->imgurl) }}" class="d-block w-100" alt="Home Image">
             </div>
             @endforeach
         </div>

@@ -17,7 +17,7 @@
         >
     </x-inputs.group>
 
-    <x-inputs.group class="w-full">
+    {{-- <x-inputs.group class="w-full">
         <div
             x-data="imageViewer('{{ $editing && $home->image ? \Storage::url($home->image) : '' }}')"
         >
@@ -56,9 +56,9 @@
             @error('image') @include('components.inputs.partials.error')
             @enderror
         </div>
-    </x-inputs.group>
+    </x-inputs.group> --}}
 
-    {{-- <x-inputs.group class="w-full">
+    <x-inputs.group class="w-full">
         <x-inputs.url
             name="imgurl"
             label="Imgurl"
@@ -66,7 +66,7 @@
             maxlength="255"
             placeholder="Imgurl"
         ></x-inputs.url>
-    </x-inputs.group> --}}
+    </x-inputs.group>
 
     {{-- <x-inputs.group class="w-full">
         <x-inputs.partials.label

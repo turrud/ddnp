@@ -27,7 +27,7 @@
                         </h5>
                         <span>{{ $home->text ?? '-' }}</span>
                     </div>
-                    <div class="mb-4">
+                    {{-- <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.image')
                         </h5>
@@ -35,8 +35,8 @@
                             src="{{ $home->image ? \Storage::url($home->image) : '' }}"
                             size="150"
                         />
-                    </div>
-                    {{-- <div class="mb-4">
+                    </div> --}}
+                    <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.imgurl')
                         </h5>
@@ -50,7 +50,7 @@
                             href="{{ $home->imgurl }}"
                             >{{ $home->imgurl ?? '-' }}</a
                         >
-                    </div> --}}
+                    </div>
                     {{-- <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.file')
