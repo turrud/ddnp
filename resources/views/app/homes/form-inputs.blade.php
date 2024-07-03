@@ -58,7 +58,7 @@
         </div>
     </x-inputs.group>
 
-    <x-inputs.group class="w-full">
+    {{-- <x-inputs.group class="w-full">
         <x-inputs.url
             name="imgurl"
             label="Imgurl"
@@ -66,9 +66,9 @@
             maxlength="255"
             placeholder="Imgurl"
         ></x-inputs.url>
-    </x-inputs.group>
+    </x-inputs.group> --}}
 
-    <x-inputs.group class="w-full">
+    {{-- <x-inputs.group class="w-full">
         <x-inputs.partials.label
             name="file"
             label="File"
@@ -85,9 +85,9 @@
         </div>
         @endif @error('file') @include('components.inputs.partials.error')
         @enderror
-    </x-inputs.group>
+    </x-inputs.group> --}}
 
-    <x-inputs.group class="w-full">
+    {{-- <x-inputs.group class="w-full">
         <x-inputs.url
             name="video"
             label="Video"
@@ -95,5 +95,5 @@
             maxlength="255"
             placeholder="Video"
         ></x-inputs.url>
-    </x-inputs.group>
+    </x-inputs.group> --}}
 </div>

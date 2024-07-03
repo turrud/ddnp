@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="shortcut icon" href="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" type="image/x-icon">
+        <link rel="shortcut icon" href="{{ asset("images/icon-logo/LOGO-MERAH.png") }}" type="image/x-icon">
         <title>DDN</title>
 
         <!-- Fonts -->

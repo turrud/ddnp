@@ -58,7 +58,7 @@
                                 <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.image')
                                 </th>
-                                <th class="px-4 py-3 text-left">
+                                {{-- <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.imgurl')
                                 </th>
                                 <th class="px-4 py-3 text-left">
@@ -66,7 +66,7 @@
                                 </th>
                                 <th class="px-4 py-3 text-left">
                                     @lang('crud.homes.inputs.video')
-                                </th>
+                                </th> --}}
                                 <th></th>
                             </tr>
                         </thead>
@@ -84,11 +84,11 @@
                                         src="{{ $home->image ? \Storage::url($home->image) : '' }}"
                                     />
                                 </td>
-                                <td class="px-4 py-3 text-left">
+                                {{-- <td class="px-4 py-3 text-left">
                                     <x-partials.thumbnail
                                         src="{{ $home->imgurl}}"
                                     />
-                                </td>
+                                </td> --}}
                                 {{-- <td class="px-4 py-3 text-left">
                                     <a
                                         class="underline cursor-pointer"
@@ -97,7 +97,7 @@
                                         >{{ $home->imgurl ?? '-' }}</a
                                     >
                                 </td> --}}
-                                <td class="px-4 py-3 text-left">
+                                {{-- <td class="px-4 py-3 text-left">
                                     @if($home->file)
                                     <a
                                         href="{{ \Storage::url($home->file) }}"
@@ -108,15 +108,15 @@
                                         >&nbsp;Download</a
                                     >
                                     @else - @endif
-                                </td>
-                                <td class="px-4 py-3 text-left">
+                                </td> --}}
+                                {{-- <td class="px-4 py-3 text-left">
                                     <a
                                         class="underline cursor-pointer"
                                         target="_blank"
                                         href="{{ $home->video }}"
                                         >{{ $home->video ?? '-' }}</a
                                     >
-                                </td>
+                                </td> --}}
                                 <td
                                     class="px-4 py-3 text-center"
                                     style="width: 134px;"

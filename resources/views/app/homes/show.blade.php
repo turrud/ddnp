@@ -36,7 +36,7 @@
                             size="150"
                         />
                     </div>
-                    <div class="mb-4">
+                    {{-- <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.imgurl')
                         </h5>
@@ -50,8 +50,8 @@
                             href="{{ $home->imgurl }}"
                             >{{ $home->imgurl ?? '-' }}</a
                         >
-                    </div>
-                    <div class="mb-4">
+                    </div> --}}
+                    {{-- <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.file')
                         </h5>
@@ -63,8 +63,8 @@
                             >&nbsp;Download</a
                         >
                         @else - @endif
-                    </div>
-                    <div class="mb-4">
+                    </div> --}}
+                    {{-- <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
                             @lang('crud.homes.inputs.video')
                         </h5>
@@ -74,7 +74,7 @@
                             href="{{ $home->video }}"
                             >{{ $home->video ?? '-' }}</a
                         >
-                    </div>
+                    </div> --}}
                 </div>
 
                 <div class="mt-10">

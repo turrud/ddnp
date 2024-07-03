@@ -10,7 +10,7 @@
         “The Future of Nusantara”
     </h1>
 
-    <p class="mt-6 text-gray-500 leading-relaxed text-justify">
+    {{-- <p class="mt-6 text-gray-500 leading-relaxed text-justify">
         Image of 2 People: Two human figures with strong and confident postures, standing side by side. They create an impression of close partnership and cooperation, reflecting determination in navigating the business world.
     </p>
     <p class="mt-6 text-gray-500 leading-relaxed text-justify">
@@ -24,7 +24,7 @@
     </p>
     <p class="mt-6 text-gray-500 leading-relaxed text-justify">
         This logo creates a strong and elegant image, reflecting the dynamism of business, resilience in work, and an indomitable spirit that are the core values of PT. Dananjaya Design Nusantara in facing challenges in the business world.
-    </p>
+    </p> --}}
 
 </div>
 
